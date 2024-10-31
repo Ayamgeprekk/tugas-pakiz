@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi Calon Karyawan</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .form-group-row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .form-group-row .form-group {
+        flex: 1;
+        margin-right: 10px;
+      }
+      .form-group-row .form-group:last-child {
+        margin-right: 0;
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .btn-submit:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form Registrasi Calon Karyawan</h2>
+      <form action="#">
+        <div class="form-group">
+          <label for="full-name">Nama Lengkap (sesuai KTP)</label>
+          <input type="text" id="full-name" name="full-name" />
+        </div>
+
+        <div class="form-group">
+          <label for="nickname">Nama Panggilan</label>
+          <input type="text" id="nickname" name="nickname" />
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="birth-place">Tempat Lahir</label>
+            <input type="text" id="birth-place" name="birth-place" />
+          </div>
+          <div class="form-group">
+            <label for="birth-date">Tanggal Lahir</label>
+            <input type="date" id="birth-date" name="birth-date" />
+          </div>
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="height">Tinggi Badan (cm)</label>
+            <input type="number" id="height" name="height" />
+          </div>
+          <div class="form-group">
+            <label for="weight">Berat Badan (kg)</label>
+            <input type="number" id="weight" name="weight" />
+          </div>
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="blood-type">Golongan Darah</label>
+            <select id="blood-type" name="blood-type">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="O">O</option>
+              <option value="AB">AB</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" name="gender">
+              <option value="male">Laki-Laki</option>
+              <option value="female">Perempuan</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="religion">Agama</label>
+            <select id="religion" name="religion">
+              <option value="islam">Islam</option>
+              <option value="christian">Kristen</option>
+              <option value="catholic">Katolik</option>
+              <option value="hindu">Hindu</option>
+              <option value="buddha">Buddha</option>
+              <option value="confucianism">Konghucu</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nationality">Warga Negara</label>
+            <input type="text" id="nationality" name="nationality" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ktp">Nomor KTP/NIK</label>
+          <input type="text" id="ktp" name="ktp" />
+        </div>
+
+        <div class="form-group">
+          <label for="kk">Nomor Kartu Keluarga</label>
+          <input type="text" id="kk" name="kk" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">No HP yang bisa dihubungi</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <h3>Alamat sesuai KTP</h3>
+        <div class="form-group">
+          <label for="address-ktp">Komplek/Jalan</label>
+          <input type="text" id="address-ktp" name="address-ktp" />
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="rt-ktp">RT</label>
+            <input type="text" id="rt-ktp" name="rt-ktp" />
+          </div>
+          <div class="form-group">
+            <label for="rw-ktp">RW</label>
+            <input type="text" id="rw-ktp" name="rw-ktp" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="postal-ktp">Kode Pos</label>
+          <input type="text" id="postal-ktp" name="postal-ktp" />
+        </div>
+
+        <h3>Alamat sesuai Domisili</h3>
+        <div class="form-group">
+          <label for="address-domicile">Komplek/Jalan</label>
+          <input type="text" id="address-domicile" name="address-domicile" />
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="rt-domicile">RT</label>
+            <input type="text" id="rt-domicile" name="rt-domicile" />
+          </div>
+          <div class="form-group">
+            <label for="rw-domicile">RW</label>
+            <input type="text" id="rw-domicile" name="rw-domicile" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="postal-domicile">Kode Pos</label>
+          <input type="text" id="postal-domicile" name="postal-domicile" />
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Registrasi</button>
+      </form>
+    </div>
+  </body>
+</html>

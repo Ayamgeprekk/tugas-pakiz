@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Sekolah Global</title>
+      <link rel="stylesheet" href="/web_sekolah2/pakfaiz/sstyling.css" />
+    </head>
+
+    <body>
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <a href="#">
+              <img src="image/lambangtp4.png " width=10%" alt="logo SMK"
+              class="logo-img" /> SMK Teratai Putih Global 4
+            </a>
+          </div>
+          <nav>
+            <ul class="menu">
+              <li><a href="/web_sekolah2/ppdb.html">PPDB</a></li>
+              <i class="ph ph-clipboard-text"></i>
+              <li><a href="#about">Tentang</a></li>
+              <i class="ph ph-info"></i>
+              <li><a href="#programs">Program</a></li>
+              <i class="ph ph-gear-six"></i>
+              <li><a href="#facilities">Fasilitas</a></li>
+              <i class="ph ph-toolbox"></i>
+              <li><a href="#news">Berita</a></li>
+              <i class="ph ph-newspaper"></i>
+              <li><a href="#contact">Kontak</a></li>
+              <i class="ph ph-user-circle-plus"></i>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <h1>Selamat Datang di SMK Teratai Putih Global 4</h1>
+      <hr />
+      <h2>Registrasi PPDB Tahun Ajaran Baru 2024/2025</h2>
+      <form action="tampildata.php" method="post">
+        <table>
+          <tr>
+            <td>Nama Depan</td>
+            <td><input type="text" name="namadepan" /></td>
+          </tr>
+          <tr>
+            <td>Nama Belakang</td>
+            <td><input type="text" name="namabelakang" /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input type="radio" name="jeniskelamin" value="Pria" />Laki-laki
+            </td>
+            <td>
+              <input type="radio" name="jeniskelamin" value="Wanita" />Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td>Tempat Lahir</td>
+            <td><input type="text" name="tempatlahir" /></td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="date" name="date" /></td>
+          </tr>
+          <tr>
+            <td>Agama</td>
+            <td>
+              <select name="agama" id="">
+                <option>Islam</option>
+                <option>Kristen</option>
+                <option>Katolik</option>
+                <option>Hindu</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td><textarea name="alamat" rows="5" cols="40"></textarea></td>
+          </tr>
+          <tr>
+            <td>No Handphone</td>
+            <td><input type="number" name="nohp" /></td>
+          </tr>
+          <tr>
+            <td>Pilih Jurusan</td>
+            <td>
+              <select name="jurusan" id="">
+                <option>DKV</option>
+                <option>RPL</option>
+                <option>TKR</option>
+                <option>TSM</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Sekolah asal SMP/MTs</td>
+            <td><input type="" name="sekolahasal" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" id="" /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" /></td>
+          </tr>
+          <tr>
+            <td>Re-Password</td>
+            <td><input type="password" name="password" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Masukan Data" /></td>
+            <td><input type="reset" /></td>
+            <td>
+              <input type="button" value="Kembali" onclick="history.back()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <hr />
+
+      /*
+      <audio controls autoplay controls loop="loop">
+        <source src="Departure.mp3" type="audio/mp3" />
+      </audio>
+      */
+      <br />
+    </body>
+    &copy; 2024 Nama anda<br />
+  </html>
+</html>
